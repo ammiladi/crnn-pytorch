@@ -1,13 +1,11 @@
-FA_LPR = dict(FA_ALPHABET='ابپتشثجدزسصطعفقکگلمنوهی+',
-              FA_DIGITS='۰۱۲۳۴۵۶۷۸۹')
+TN_LPR = dict(
+    TN_ALPHABET='تونس',
+    FA_DIGITS='0123456789'
+)
 
-FA_DOCS = dict(FA_ALPHABET='اآبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیى',
-               FA_EXTRAS='ءؤئأّ',
-               FA_DIGITS='۰۱۲۳۴۵۶۷۸۹',
-               SYMBOLS='|()+-:،!.؛=%؟',
-               EN_DIGITS='0123456789')
-
-ALPHABETS = dict(FA_LPR=FA_LPR, FA_DOCS=FA_DOCS)
+ALPHABETS = {
+    'TN_LPR': "".join(TN_LPR.values())
+}
 
 
 ALPHABETS = {k: "".join(list(v.values())) for k, v in ALPHABETS.items()}
